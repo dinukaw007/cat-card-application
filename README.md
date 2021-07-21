@@ -1,4 +1,6 @@
-# My approach of restructuring the code
+# Cat Card Application
+
+## My approach of restructuring the code
 I rearchitected the code structure by following some elements of Clean Architecture  and SOLID Principles. I Separated the program code into different layers such as Presentation Layer, Domain Layer (Business Logic) and Data Layer. Because of that, the code (business logic) is independent from database and framework and business logic can be easily test without considering UI or presentation layer.
 ###### Example:
 1. Currently, output files are saving to root folder. In future, if we have a requirement to save the file into the cloud, we can do that change without changing the business logic. Only we have to do is change the external adapter. 
@@ -16,9 +18,9 @@ Some of libraries and packages in the given code was outdated and deprecated. Th
 ###### Note
 This was re-architect with the assumption of that this will be grow into a large-scale application.  Therefore, maintainability and testability of the application was designed to fulfill that assumed growth. 
 
-# How to run the Programme
+## How to run the Programme
 
-## Prerequisite 
+### Prerequisite 
 Programme has been written in Node.js firstly, install node v14.2.0 
 Following node packages used in solution 
 • axios: "^0.21.1",
@@ -26,7 +28,7 @@ Following node packages used in solution
 •	minimist: "^1.2.5",
 •	sharp: "^0.28.3"
 
-## Project folder structure and overview
+### Project folder structure and overview
 ```
 |-------app
 |	|-------container
@@ -58,7 +60,7 @@ Following node packages used in solution
 •	service.js - Starting point of the application 
 
 
-# How to run the application
+## How to run the application
 
 Firstly, run npm install in terminal
 ```
